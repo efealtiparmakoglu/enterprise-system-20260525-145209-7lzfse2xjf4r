@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: enterprise-system-20260525-145209-7lzfse2xjf4r-service
+spec:
+  selector:
+    app: enterprise-system-20260525-145209-7lzfse2xjf4r
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP
